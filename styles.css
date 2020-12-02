@@ -1,0 +1,84 @@
+/* 
+-El "*" es selector universal, me selecciona todo el cuerpo "body" del html
+-El "padding: 0" me mueve toda mi lista de navegacion hacia la izquierda 
+-El "margin: 0" me mueve el resto de elementos a la izquierda y arriba , o sea los apega completamente sin dejar margen
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ddd;
+}
+
+
+/* 
+-El div que contiene a TODAS mis etiquetas html (main, header, nav,aside,section,etc) tiene por id="container" y a este le aplica el ancho de 950 y ademas al hacer "margin: auto" logro que dicho contenedor se centre o sea tenga e mismo espacio a la izquierda como a la derecha
+*/
+
+#container {
+    width: 950px;
+    margin: auto;
+}
+
+main {
+    width: 950px;
+    height: 100px;
+    background-color: #333;
+}
+
+header nav {
+    text-align: center;
+    background-color: #FF6309;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+section {
+    float: left;
+    width: 750px;
+    height: 450px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+aside {
+    float: left;
+    width: 195px;
+    height: 300px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+aside:nth-of-type(1) {
+    height: 100px;
+}
+
+footer {
+    clear: both;
+    width: 950px;
+    height: 50px;
+    background-color: #333;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    line-height: 80px;
+}
